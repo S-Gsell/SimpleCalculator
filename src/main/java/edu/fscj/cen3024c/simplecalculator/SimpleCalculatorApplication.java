@@ -4,13 +4,15 @@
 // Template for calculator application
 
 //L. Nguyen
-//1/17/2024
+//1/22/2024
 //Creating methods for each operation
 
 package edu.fscj.cen3024c.simplecalculator;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+//Added import statement to run SimpleCalculator.java
+import static edu.fscj.cen3024c.simplecalculator.SimpleCalculator.*;
 
 @SpringBootApplication
 public class SimpleCalculatorApplication {
@@ -33,31 +35,7 @@ public class SimpleCalculatorApplication {
 
         // Test the subtract function
         result = subtract(number1, number2);
-        // edited to say subtract, originally said add
+        //This print said add, edited to say subtract
         System.out.println("Subtract result is: " + result);
-
     }
-    //Method for multiplying
-    public static int multiply(int number1, int number2)
-    {
-        return number1 * number2;
-    }
-
-    //Method for dividing
-    public static int divide( int number1, int number2)
-    {
-        return number1/number2;
-    }
-    //Method for adding
-    public static int add(int number1, int number2)
-    {
-        return number1 + number2;
-    }
-
-    //Method for subtracting
-    public static int subtract(int number1, int number2)
-    {
-        return number1 - number2;
-    }
-
 }
